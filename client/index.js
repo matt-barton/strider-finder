@@ -2,7 +2,7 @@ const express = require('express'),
   app = express(),
   template = require('jade').compileFile('./client/src/templates/homepage.jade');
 
-app.use(express.static('public'));
+app.use(express.static('client/public'));
 
 app.get('/', (req, res, next) => {
   try {

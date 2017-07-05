@@ -1,8 +1,12 @@
-const express = require('express'),
+const dotenv = require('dotenv'),
+  express = require('express'),
   api = require('./lib/api'),
   client = require('./client'),
-  app = express(),
-  port = process.env.PORT || 3000;
+  app = express();
+
+dotenv.load();
+
+const port = process.env.PORT || 3000;
 
 app.use('/api', api);
 app.use('/', client);

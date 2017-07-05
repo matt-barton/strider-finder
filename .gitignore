@@ -1,7 +1,6 @@
 #Specific excludes
 names.txt
 .env
-client/public/
 
 # Logs
 logs
