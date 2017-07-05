@@ -1,0 +1,27 @@
+extend default
+
+block content
+  p.
+    This utility helps identify Steel City Striders by name in race result lists.  Sometimes
+    race results don't have club affiliations, and sometimes Striders forget to put down
+    their own affiliation when entering races.
+
+  p.
+    You can upload race result files, paste in results listings (coming soon!) or provide a url to results
+    listings (again, coming soon!).
+
+  p.
+    This tool will search for Striders by name in the results.  It isn't always an exact science, and these
+    kind of things can cause problems:
+
+  ul
+    li A Strider with the surname O'Neil is listed in results as ONeil or O`Neil
+    li A Strider we know as Robert is listed in results as Bob
+    li A name is simply spelled incorrectly
+    li The race results page has got some bizarre formatting issues
+  p
+  p.
+    Where we can't locate a Strider by full name, we'll try matching on Surname only, but this can
+    result in a lot of false positives, if the name we're looking for is common like Smith or Brown. In these
+    cases, the matching information will be displayed, so you can make a judgment yourself as to whether
+    it is a good match or not.
