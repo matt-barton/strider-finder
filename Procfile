@@ -1,0 +1,1 @@
+worker: npm run clean && npm run watch-css & nodemon strider-finder -e js,jade
