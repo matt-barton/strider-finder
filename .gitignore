@@ -1,3 +1,6 @@
+#Specific excludes
+names.txt
+
 # Logs
 logs
 *.log

@@ -1,0 +1,28 @@
+{
+  "name": "strider-finder",
+  "version": "1.0.0",
+  "description": "A tool to find Steet City Striders members in a race results list ",
+  "main": "strider-finder.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-fileupload": "^0.1.4",
+    "file-type": "^5.2.0",
+    "fs-readfile-promise": "^3.0.0",
+    "pdf2table": "0.0.2",
+    "xlsx": "^0.10.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-barton/strider-finder.git"
+  },
+  "author": "Matt Barton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matt-barton/strider-finder/issues"
+  },
+  "homepage": "https://github.com/matt-barton/strider-finder#readme"
+}
