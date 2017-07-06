@@ -1,6 +1,7 @@
 #Specific excludes
 names.txt
 .env
+client/public/js/built.js
 
 # Logs
 logs

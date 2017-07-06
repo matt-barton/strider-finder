@@ -1,10 +1,11 @@
-const dotenv = require('dotenv'),
-  express = require('express'),
+const dotenv = require('dotenv');
+dotenv.load();
+
+const express = require('express'),
   api = require('./lib/api'),
   client = require('./client'),
   app = express();
 
-dotenv.load();
 
 const port = process.env.PORT || 3000;
 

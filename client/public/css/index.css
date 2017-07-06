@@ -8,7 +8,7 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 .header {
-  background: url("https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background: url("/images/peaks.jpg?crop=edges&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=925");
   background-position: center;
 }
 .header .page-title {
@@ -53,4 +53,45 @@ body {
 .footer p {
   color: #444;
   font-size: 12px;
+}
+.datagrid {
+  font: normal 12px/150% Courier New, Courier, monospace;
+  background: #fff;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.datagrid table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+.datagrid table td,
+.datagrid table th {
+  padding: 3px 10px;
+}
+.datagrid table thead th {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #103a6b), color-stop(1, #58b3e8));
+  background: -moz-linear-gradient(center top, #103a6b 5%, #58b3e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#103A6B', endColorstr='#58B3E8');
+  background-color: #103a6b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-left: 1px solid #0070a8;
+}
+.datagrid table tbody td {
+  color: #00496b;
+  border-left: 1px solid #e1eef4;
+  font-size: 12px;
+  font-weight: normal;
+}
+.datagrid table tbody .alt td {
+  background: #e1eef4;
+  color: #00496b;
+}
+div#uploadResults div#resultsLength {
+  margin-top: 20px;
 }
