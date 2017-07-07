@@ -95,3 +95,7 @@ body {
 div#uploadResults div#resultsLength {
   margin-top: 20px;
 }
+div#pasteText,
+div#fileUpload {
+  margin-top: 20px;
+}

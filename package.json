@@ -4,23 +4,24 @@
   "description": "A tool to find Steet City Striders members in a race results list ",
   "main": "strider-finder.js",
   "dependencies": {
-    "dotenv": "^4.0.0",
-    "express": "^4.15.3",
-    "express-fileupload": "^0.1.4",
-    "file-type": "^5.2.0",
-    "fs-readfile-promise": "^3.0.0",
-    "jade": "^1.11.0",
+    "dotenv": "4.0.0",
+    "express": "4.15.3",
+    "express-fileupload": "0.1.4",
+    "file-type": "5.2.0",
+    "fs-readfile-promise": "3.0.0",
+    "jade": "1.11.0",
+    "mz": "2.6.0",
     "pdf2table": "0.0.2",
-    "stylus": "^0.54.5",
-    "xlsx": "^0.10.6"
+    "stylus": "0.54.5",
+    "xlsx": "0.10.6"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-uglify": "^3.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "nodemon": "^1.9.2"
+    "grunt": "1.0.1",
+    "grunt-cli": "1.2.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-uglify": "3.0.1",
+    "grunt-contrib-watch": "1.0.0",
+    "nodemon": "1.9.2"
   },
   "scripts": {
     "build-css": "stylus client/src/stylesheets/index.styl -o client/public/css",
