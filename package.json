@@ -4,6 +4,7 @@
   "description": "A tool to find Steet City Striders members in a race results list ",
   "main": "strider-finder.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "dotenv": "4.0.0",
     "express": "4.15.3",
     "express-fileupload": "0.1.4",
