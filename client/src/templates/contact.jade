@@ -1,7 +1,12 @@
 extend default
 
 block content
+
   p Get in touch for any reason.
   p #[span Email:] #[a(href='mailto:matt@mattbarton.org') matt@mattbarton.org]
   p #[span Twitter:] #[a(href='https://twitter.com/@MattBarton_', title='@MattBarton_', target='_blank') @MattBarton_] #[span (content warning for foul language and stridently left-wing politics)]
   p #[span Facebook: via the] #[a(href='https://www.facebook.com/groups/SteelCityStriders/', title='Striders Facebook', target='_blank') Steel City Striders] #[span group] 
+
+  if !auth
+  a(href='/auth/facebook')
+    img(src='/images/fb_login.png', alt='Login with Facebook')

@@ -1,14 +1,17 @@
 extend default
 
 block content
+  if !auth
+    a(href='/auth/facebook')
+      img(src='/images/fb_login.png', alt='Login with Facebook')
+
   p.
     This utility helps identify Steel City Striders by name in race result lists.  Sometimes
     race results don't have club affiliations, and sometimes Striders forget to put down
     their own affiliation when entering races.
 
   p.
-    You can upload race result files, paste in results listings (coming soon!) or provide a url to results
-    listings (again, coming soon!).
+    You can upload race result files, or copy and paste results listings.
 
   p.
     This tool will search for Striders by name in the results.  It isn't always an exact science, and these
@@ -19,9 +22,9 @@ block content
     li A Strider we know as Robert is listed in results as Bob
     li A name is simply spelled incorrectly
     li The race results page has got some bizarre formatting issues
+    li A Strider has a really common name, and matches another person with the same name
   p
   p.
-    Where we can't locate a Strider by full name, we'll try matching on Surname only, but this can
-    result in a lot of false positives, if the name we're looking for is common like Smith or Brown. In these
-    cases, the matching information will be displayed, so you can make a judgment yourself as to whether
-    it is a good match or not.
+    Where a race result is found that matches a Strider, the appropriate line from the results listing
+    will be quoted, to help guard against Joe Bloggs from Big Hills Running Club being
+    incorrectly identified as Joe Bloggs the Steel City Strider.
